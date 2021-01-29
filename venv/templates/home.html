@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scraping Data</title>
+</head>
+<body>
+
+<label>CAUSE LIST OF REGISTRY</label><br><br>
+<form action="http://127.0.0.1:5000/insert" method="POST">
+    <label>CIC/IC</label>
+    <select name="cic" id="cic">
+        <option>--Select--</option>
+        <option>Y K Sinha</option>
+        <option>Neeraj Kumar Gupta</option>
+        <option>Suresh Chandra</option>
+        <option>Uday Mahurkar</option>
+    </select><br>
+    <label>Search Type</label>
+    <select name="searchtype" id="searchtype">
+        <option>--Select--</option>
+        <option>Public Authority</option>
+    </select><br>
+    <label>From Date(format dd/mm/yyyy)</label>
+    <input type="text" id="fromdate" name="fromdate" placeholder="From Date" ><br>
+    <label>To Date(format dd/mm/yyyy)</label>
+    <input type="text" id="todate" name="todate" placeholder="To Date" ><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
