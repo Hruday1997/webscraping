@@ -19,7 +19,7 @@ def home():
 def scrapeAndInsert():
     if request.method == "POST":
         options = webdriver.ChromeOptions()
-        options.headless = True
+        options.headless = False
         driver = webdriver.Chrome(ChromeDriverManager().install(),options=options)
         driver.get('https://dsscic.nic.in/cause-list-report-web/registry_cause_list/1')
         #driver.find_element_by_xpath("//input[@value='appCom']").click()
